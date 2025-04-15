@@ -44,7 +44,7 @@ function noSearchDefaultPageRender() {
   });
 }
 
-const LS_DEFAULT_BANG = localStorage.getItem("default-bang") ?? "g";
+const LS_DEFAULT_BANG = localStorage.getItem("default-bang") ?? "ddg";
 const defaultBang = bangs.find((b) => b.t === LS_DEFAULT_BANG);
 
 function getBangredirectUrl() {
@@ -64,7 +64,7 @@ function getBangredirectUrl() {
   const cleanQuery = query.replace(/!\S+\s*/i, "").trim();
 
   // Format of the url is:
-  // https://www.google.com/search?q={{{s}}}
+  // https://duckduckgo.com/?q={{{s}}}
   const searchUrl = selectedBang?.u.replace(
     "{{{s}}}",
     // Replace %2F with / to fix formats like "!ghr+t3dotgg/unduck"
