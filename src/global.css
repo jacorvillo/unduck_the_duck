@@ -45,7 +45,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
-  color: #1a1a1a;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 h1,
@@ -59,7 +60,7 @@ h6 {
 }
 
 a {
-  color: #444444;
+  color: #a9a9a9;
 }
 a:hover {
   color: #888888;
@@ -95,15 +96,16 @@ textarea {
 /* Update url-input width to be 100% since container will control max width */
 .url-input {
   padding: 8px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #3d3d3d;
   border-radius: 4px;
   width: 100%;
-  background: #f5f5f5;
+  background: #191919;
+  color: #fff;
 }
 
 .copy-button {
   padding: 8px;
-  color: #666;
+  color: #ccc;
   border-radius: 4px;
   transition: all 0.2s;
   display: flex;
@@ -112,16 +114,17 @@ textarea {
 }
 
 .copy-button:hover {
-  background: #f0f0f0;
+  background: #222;
 }
 
 .copy-button:active {
-  background: #e5e5e5;
+  background: #333;
 }
 
 .copy-button img {
   width: 20px;
   height: 20px;
+  filter: invert(70%);
 }
 
 .copy-button.copied {
@@ -136,15 +139,15 @@ textarea {
   right: 0;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #999;
 }
 
 .footer a {
-  color: #666;
+  color: #999;
   text-decoration: none;
   font-weight: 500;
 }
 
 .footer a:hover {
-  color: #333;
+  color: #ccc;
 }
